@@ -111,7 +111,7 @@ class _AddNewTaskScreenState extends State<AddNewTaskScreen> {
     setState(() {});
     if(response.isSuccess){
       _clearTextfields();
-      showSnackBarMessage(context, 'New task added');
+      showSnackBarMessage(context, 'New task added!');
     }else{
       showSnackBarMessage(context, response.errorMessage);
     }
